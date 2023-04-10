@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script defer src="/src/assets/main.js"></script>
+    <link rel="stylesheet" href="../../assets/style.css" />
+    <title>Login Administrador</title>
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">Indica Fatec</h2>
+
+      <nav>
+        <a href="/" class="nav_link">Home</a>
+      </nav>
+    </header>
+
+    <main class="main_login">
+      <form class="form_login" action="">
+        <img src="../../images/avatar.png" alt="Avatar do Administrador" />
+        <br />
+        <a href="../cadastro/cadastro_aluno.html"
+          >Não possui conta, cadastre-se</a
+        >
+
+        <!-- E-mail do Aluno -->
+        <label for="id">
+          <strong>Email:*</strong>
+        </label>
+        <input required type="text" id="id" placeholder="aluno@fatec.com" />
+
+        <!-- Senha do Aluno -->
+        <label for="senha">
+          <strong>Senha:*</strong>
+        </label>
+        <input required type="password" id="senha" placeholder="*******" />
+        <p class="error" id="password-error"></p>
+
+        <a
+          href="/src/pages/esqueci-senha/esqueci_senha.html"
+          class="esqueci_senha"
+          >Esqueci minha senha</a
+        >
+
+        <button
+          id="button_login"
+          class="btn_login"
+          value="Login"
+          onclick="validarSenha()"
+        >
+          Enviar
+        </button>
+      </form>
+    </main>
+  </body>
+</html>

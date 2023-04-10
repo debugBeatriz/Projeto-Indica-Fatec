@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../../assets/style.css" />
+    <title>Cadastro Aluno</title>
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">Indica Fatec</h2>
+
+      <nav>
+        <a href="/" class="nav_link">Home</a>
+      </nav>
+    </header>
+
+    <main class="col-9 m-auto my-5">
+      <article class="card_cadastro">
+        <h3 class="form_title">Formulário de Cadastro</h3>
+        <form class="form_cadastro" action="">
+          <!-- Nome Completo -->
+          <label for="nome_completo" class="col_1">
+            <strong>Nome completo:*</strong>
+          </label>
+          <input
+            required
+            type="text"
+            class="nome_completo col_1"
+            id="nome_completo"
+            placeholder="Nome completo"
+          />
+
+          <!-- Celular -->
+          <label for="celular" class="col_1">
+            <strong>Celular:*</strong>
+          </label>
+          <input
+            required
+            type="number"
+            id="celular"
+            class="celular_cadastro col_1"
+            placeholder="(11) 9 1234-5687"
+          />
+
+          <!-- Curso -->
+          <label for="curso" class="col_1">
+            <strong>Curso:*</strong>
+          </label>
+          <select required class="col_1" name="curso" id="curso">
+            <option value="gestao_tecnologia">Gestão de Tecnologia</option>
+            <option value="gestao_efeciencia_energética">
+              Gestão da Eficiência Energética
+            </option>
+          </select>
+
+          <!-- Email -->
+          <label for="email" class="col_1">
+            <strong>Email:*</strong>
+          </label>
+          <input
+            required
+            id="email"
+            type="text"
+            class="email col_1"
+            placeholder="seu@email.com.br"
+          />
+
+          <!-- Coluna 2 -->
+          <!-- Data Nascimento -->
+          <label for="data_nascimento" class="col_2">
+            <strong>Data de Nascimento:*</strong>
+          </label>
+          <input required type="date" id="data_nascimento" class="col_2" />
+
+          <!-- Cidade -->
+          <label for="cidade" class="col_2">
+            <strong>Cidade:*</strong>
+          </label>
+          <input
+            required
+            type="text"
+            class="cidade col_2"
+            id="cidade"
+            placeholder="Franco da Rocha"
+          />
+
+          <!-- Semestre -->
+          <label for="semestre" class="col_2">
+            <strong>Semestre:*</strong>
+          </label>
+          <select required class="col_2" id="semestre">
+            <option value="1">1º Semestre</option>
+            <option value="2">2º Semestre</option>
+            <option value="3">3º Semestre</option>
+            <option value="4">4º Semestre</option>
+            <option value="5">5º Semestre</option>
+            <option value="6">6º Semestre</option>
+            <option value="7">7º Semestre</option>
+            <option value="8">8º Semestre</option>
+          </select>
+
+          <!-- Senha -->
+          <label for="senha" class="col_2">
+            <strong>Senha:*</strong>
+          </label>
+          <input
+            required
+            type="password"
+            id="senha"
+            class="col_2"
+            placeholder="***********"
+          />
+
+          <!-- Coluna 3 -->
+          <!-- Estado -->
+          <label for="estado" class="col_3">
+            <strong>Estado:*</strong>
+          </label>
+          <input
+            required
+            type="text"
+            id="estado"
+            class="col_3"
+            placeholder="São Paulo"
+          />
+
+          <!-- Trabalha Atualmente -->
+          <label for="trabalha_atualmente" class="col_3">
+            <strong>Trabalha atualmente?*</strong>
+          </label>
+          <select required class="col_3" id="trabalha_atualmente">
+            <option value="Sim">Sim</option>
+            <option value="Não">Não</option>
+          </select>
+
+          <!-- Confirmar Senha -->
+          <label for="confirma_senha" class="col_3">
+            <strong>Confimar senha:*</strong>
+          </label>
+          <input
+            required
+            type="password"
+            id="confirma_senha"
+            class="col_3"
+            placeholder="***********"
+          />
+
+          <input required type="checkbox" name="" id="termos" class="termos" />
+          <label for="termos" class="termos">
+            Declaro que as informações acima prestadas são verdadeiras, e assumo
+            a inteira responsabilidade pelas mesmas.
+          </label>
+
+          <input type="submit" class="btn_form col_3" value="Enviar" />
+        </form>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../src/assets/style.css"/> 
+    <title>Adicionar Vagas</title>
+</head>
+<header>
+    <h2 class="logo"> Indica Fatec </h2>
+
+</header>
+<body>
+   
+    <section>
+        <form action="" method="post" class="form-adiciona-vaga">
+        <h2 id="adiciona">Adicionar Vagas</h2>
+        <label for="nome_empresa" class="label-vagas"><strong>Empresa:*</strong></label>
+        <input type="text" class="input-vagas" id="nomeEmpresa" placeholder="Nome da Empresa" required>
+        <label for="cargo" class="label-vagas"><strong>Cargo:*</strong></label>
+        <input type="text" class="input-vagas" id="cargo" placeholder="Analista de TI" required>
+        <label for="salario" class="label-vagas"><strong>Salário:*</strong></label>
+        <input type="number" class="input-vagas" id="salario" placeholder="R$ 0000,00" required>
+        <label for="local" class="label-vagas" ><strong>Local:*</strong></label>
+        <input type="text" class="input-vagas"  placeholder="Cidade-Estado" required>
+        <label for="link_vagas" class="label-vagas" id="local"><strong>Link da Vaga:*</strong></label>
+        <input type="url" class="input-vagas" id="linkVaga" placeholder="https://Empresa.com.br/" required>
+        <label for="nivel_cargo" class="label-vagas"><strong>Nível de Cargo:*</strong> </label>
+        <input type="text" class="input-vagas" id="nivel" placeholder="Estágio, Junior, Sênior, Pleno" required>
+        <a href="vagas_aluno.html"></a><button type="submit" class="btn_form_adc" value="Enviar"><strong>Publicar</strong></button>
+        </form>
+    </section>
+    <article id="card-container" class="card-container"></article>>
+
+    <script src="/src/assets/script.js"></script>
+</body>
+</html>
